@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spieltagsberichte – Salzachbande</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+  <div class="header-top">
+    <img src="logo.png" alt="Logo" class="header-logo" />
+    <h1 class="header-title">SALZACHBANDE</h1>
+    <img src="sb.png" alt="SB" class="header-sb" />
+  </div>
+
+  <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false" aria-controls="nav-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav" id="nav-menu">
+    <ul>
+      <li><a href="index.html">Neuigkeiten</a></li>
+      <li><a href="spieltagsberichte.html"class="active">Spieltagsberichte</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+  <main class="content reports">
+  <article class="report">
+    <a href="bericht-fcbayern.html" class="report-link">
+      <div class="report-image-wrapper">
+        <img src="images/img1.webp" alt="Gegner 1" />
+        <div class="report-overlay">(H) FC Bayern München</div>
+      </div>
+    </a>
+  </article>
+
+  <article class="report">
+    <a href="bericht-borussia.html" class="report-link">
+      <div class="report-image-wrapper">
+        <img src="images/img2.webp" alt="Gegner 2" />
+        <div class="report-overlay">(A) Borussia Dortmund</div>
+      </div>
+    </a>
+  </article>
+
+  <article class="report">
+    <a href="bericht-rbleipzig.html" class="report-link">
+      <div class="report-image-wrapper">
+        <img src="images/img3.webp" alt="Gegner 3" />
+        <div class="report-overlay">(H) RB Leipzig</div>
+      </div>
+    </a>
+  </article>
+  <!-- Weitere Berichte hier -->
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
