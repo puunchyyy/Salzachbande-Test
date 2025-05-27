@@ -275,3 +275,44 @@ body::before {
     max-width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .header-logo,
+  .header-sb {
+    height: 60px;
+  }
+}
+.nav {
+  position: fixed;
+  top: 100px; /* je nach Höhe des Headers */
+  right: 0;
+  width: 200px;
+  background-color: #ff0000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.nav.open {
+  transform: translateX(0);
+}
+
+.nav ul {
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav ul li {
+  margin: 10px 0;
+}
